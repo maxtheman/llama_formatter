@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llama_formatter"
+version = "0.1.0"
+description = "Formatting with llama"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=0.34.2",
+    "diff-match-patch>=20230430",
+    "outlines>=0.0.46",
+    "torch>=2.4.1",
+    "transformers>=4.45.1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llama_formatter"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+
+[tool.uv]
+dev-dependencies = [
+    "hatchling>=1.25.0",
+    "pytest>=8.3.3",
+    "pytest-asyncio>=0.24.0",
+    "setuptools>=75.1.0",
+    "huggingface-hub[cli]>=0.25.1",
+]

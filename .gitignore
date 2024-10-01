@@ -1,0 +1,26 @@
+# Virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Test coverage
+.coverage
+htmlcov/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
